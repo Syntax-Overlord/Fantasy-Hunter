@@ -61,4 +61,4 @@ If you have any questions, ideas, or feedback, feel free to open an issue on Git
 
 ##  
 
-Thanks for checking out Fantasy Hunter! More updates coming soon! 🚀
+Thanks for checking out Fantasy Hunter! More updates coming soon! 🚀🚀
