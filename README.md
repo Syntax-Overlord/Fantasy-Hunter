@@ -1,5 +1,5 @@
 # **Fantasy Hunter - A Text-Based RPG**
-
+<!--
 ## **About the Project**
 
 Welcome to Fantasy Hunter, a text-based RPG that I started as a proof of my progress in game development. This project is in beta, and I plan to update it every 1 to 2 months with new features, improvements, and hidden Easter eggs referencing things I enjoy.
@@ -61,4 +61,6 @@ If you have any questions, ideas, or feedback, feel free to open an issue on Git
 
 ##  
 
-Thanks for checking out Fantasy Hunter! More updates coming soon! 🚀🚀
+Thanks for checking out Fantasy Hunter! More updates coming soon! 🚀🚀-->
+
+IN WORKS
