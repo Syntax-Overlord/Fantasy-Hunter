@@ -67,17 +67,16 @@ def get_info():
             break
         else:
             print("\x1b[3mThe stars refuse this command. Choose anew.\x1b[0m")
-    match _class:
-        case "C1":
-            equipment = 1001
-        case "C2":
-            equipment = 1002
-        case "C3":
-            equipment = 1003
-        case "C4":
-            equipment = 1004
-        case "C5":
-            equipment = 1002
+    if _class == "C1":
+        equipment = 1001
+    elif _class == "C2":
+        equipment = 1002
+    elif _class == "C3":
+        equipment = 1003
+    elif _class == "C4":
+        equipment = 1004
+    elif _class == "C5":
+        equipment = 1002
     return {"name": name, "class": _class, "equipments": equipment}
 
 
