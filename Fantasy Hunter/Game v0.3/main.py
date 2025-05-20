@@ -10,7 +10,7 @@ playerData = {}
 progress = 0
 
 
-def creation_Of_Player(details):
+def create_player(details):
     global playerData
     # Class, Name, equipments
     stats = c.classes[details["class"]]["stats"]
@@ -102,7 +102,7 @@ def intro():
         else:
             print("\x1b[3mThe stars refuse this command. Choose anew.\x1b[0m")
     if play == 1:
-        creation_Of_Player(get_info())
+        create_player(get_info())
     else:
         print(
             "\x1b[3mLeaving so soon? Return stronger, and the world will await your legend.\x1b[0m"
