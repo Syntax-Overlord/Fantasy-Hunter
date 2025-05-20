@@ -19,7 +19,7 @@ def creation_Of_Player(details):
         "name": details["name"],
         "class": c.classes[details["class"]]["name"],
         "stats": stats,
-        "equipment": itm.gear[details["equipments"]]["name"],
+        "equipment": [itm.gear[details["equipments"]]["name"]],
         "hp": int(stats["str"] * 5) + int(stats["end"] * 10),
         "mana": int(stats["int"] * 10) + int(stats["char"] * 2),
     }
