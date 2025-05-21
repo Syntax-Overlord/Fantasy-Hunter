@@ -47,7 +47,7 @@ By the time you're reading this, I may have already implemented some of these fe
 
 - No commercial use – You CANNOT make money from this project in any way (selling, ads, paid versions, etc.).
 
-- No misattribution – If you share or modify the game, you must give credit to the original project and not claim it as your own.
+- No distribution – If you share or modify the game, you must give credit to the original project and not claim it as your own.
 
 - No closed-source forks – If you modify and distribute your own version, it must remain open-source under the same license.
 

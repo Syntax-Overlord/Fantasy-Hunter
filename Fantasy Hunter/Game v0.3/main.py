@@ -10,22 +10,29 @@ playerData = {}
 progress = 0
 
 
+# CREATE PLAYER STATUS -------------------------------------------------------------------------------------------------------------------------------------------------
 def create_player(details):
+    """CREATES THE PLAYER DATA USING THE DATABASES AND THE USER GIVEN DATA"""
     global playerData
-    # Class, Name, equipments
+    # Class, Name, equipments, gender
     stats = c.classes[details["class"]]["stats"]
 
     playerData = {
         "name": details["name"],
+        "gender": details["gender"],
         "class": c.classes[details["class"]]["name"],
         "stats": stats,
         "equipment": [itm.gear[details["equipments"]]["name"]],
         "hp": int(stats["str"] * 5) + int(stats["end"] * 10),
         "mana": int(stats["int"] * 10) + int(stats["char"] * 2),
+        "level": 1,
     }
 
 
+# GET INFORMATION FROM USER TO CREATE PLAYER STATUS ------------------------------------------------------------------------------------------------------------------
 def get_info():
+    """THIS IS USED TO GET DATA FROM THE USER TO MAKE THE IN GAME PLAYER PROFILE"""
+    print()
     while True:
         gender = (
             input(
@@ -77,10 +84,12 @@ def get_info():
         equipment = 1004
     elif _class == "C5":
         equipment = 1002
-    return {"name": name, "class": _class, "equipments": equipment}
+    return {"name": name, "class": _class, "equipments": equipment, "gender": gender}
 
 
+# INTRO TO THE GAME ---------------------------------------------------------------------------------------------------------------------------------------------------
 def intro():
+    """VERY INTRO OF THE GAME"""
     global playerData
     print(art.logo)
     print(
@@ -110,13 +119,43 @@ def intro():
         return
 
 
+# GENERATE STATUS WINDOW -----------------------------------------------------------------------------------------------------------------------------------------------
+def get_status_window(data):
+    """GENERATES A STATUS WINDOW USING THE GENERATED PLAYER DATA"""
+    print(f"\n+------------------------------------+")
+    print(f"  NAME: {data["name"].title()}")
+    print(f"  Gender: {data["gender"].title()}")
+    print(f"  Level: {data["level"]}")
+    print(f"  CLASS: {data['class'].title()}")
+    print(f"  HP: {data["hp"]}")
+    print(f"  MANA: {data["mana"]}")
+    print(f" ")
+    print(f"  STATISTICS")
+    print(f"    STRENGTH: {data["stats"]['str']}     DEXTERITY: {data["stats"]['dex']}")
+    print(
+        f"    INTELLIGENCE: {data["stats"]['int']}  ENDURANCE: {data["stats"]['end']}"
+    )
+    print(f"    CHARISMA: {data["stats"]['char']}")
+    print(f" ")
+    print(f"  EQUIPPED")
+    for _ in data["equipment"]:
+        print(f"  -> {_.title()}")
+    print(f"+------------------------------------+\n")
+
+
+# STORYLINE START ------------------------------------------------------------------------------------------------------------------------------------------------------
 def story():
-    """TODO"""
+    """MAIN STORYLINE FUNCTION(I THINK)"""
+    global playerData
+    print("\n")
 
 
 def main():
+    """MAIN"""
     intro()
+    get_status_window(playerData)
     print(playerData)
+    # get_status_window(data = {'name': 'arthur', 'gender': 'Male', 'class': 'warrior', 'stats': {'str': 10, 'int': 2, 'dex': 5, 'end': 8, 'char': 4}, 'equipment': ['rusty sword'], 'hp': 130, 'mana': 28, 'level': 1})
 
 
 main()
