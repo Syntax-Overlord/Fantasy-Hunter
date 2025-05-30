@@ -145,19 +145,10 @@ def get_status_window(data):
     print(f"+------------------------------------+\n")
 
 
-# STORYLINE START ------------------------------------------------------------------------------------------------------------------------------------------------------
-def story():
-    """MAIN STORYLINE FUNCTION(I THINK)"""
-    global playerData
-    print("\n")
-
-
 def main():
     """MAIN"""
     intro()
     get_status_window(playerData)
-    print(playerData)
-    # get_status_window(data = {'name': 'arthur', 'gender': 'Male', 'class': 'warrior', 'stats': {'str': 10, 'int': 2, 'dex': 5, 'end': 8, 'char': 4}, 'equipment': ['rusty sword'], 'hp': 130, 'mana': 28, 'level': 1})
 
 
 main()
