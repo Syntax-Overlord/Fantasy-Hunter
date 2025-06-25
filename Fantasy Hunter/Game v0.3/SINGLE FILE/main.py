@@ -1,13 +1,132 @@
-import skills as sk
-import items as itm
-import classes as c
 import random as rd
 import datetime as dt
 import math
-import art
+
+
+logo = r"""  ______      _   _ _______        _______     __  _    _ _    _ _   _ _______ ______ _____  
+ |  ____/\   | \ | |__   __|/\    / ____\ \   / / | |  | | |  | | \ | |__   __|  ____|  __ \ 
+ | |__ /  \  |  \| |  | |  /  \  | (___  \ \_/ /  | |__| | |  | |  \| |  | |  | |__  | |__) |
+ |  __/ /\ \ | . ` |  | | / /\ \  \___ \  \   /   |  __  | |  | | . ` |  | |  |  __| |  _  / 
+ | | / ____ \| |\  |  | |/ ____ \ ____) |  | |    | |  | | |__| | |\  |  | |  | |____| | \ \ 
+ |_|/_/    \_\_| \_|  |_/_/    \_\_____/   |_|    |_|  |_|\____/|_| \_|  |_|  |______|_|  \_\
+                                                                                             
+                                                                                             """
+
+# BASIC STARTING CLASSES
+classes = {
+    "C1": {
+        "name": "warrior",
+        "stats": {
+            "str": 10,
+            "int": 2,
+            "dex": 5,
+            "end": 8,
+            "char": 4
+        }
+    },
+    "C2": {
+        "name": "mage",
+        "stats": {
+            "str": 2,
+            "int": 10,
+            "dex": 4,
+            "end": 3,
+            "char": 5
+        }
+    },
+    "C3": {
+        "name": "rogue",
+        "stats": {
+            "str": 4,
+            "int": 3,
+            "dex": 10,
+            "end": 5,
+            "char": 6
+        }
+    },
+    "C4": {
+        "name": "archer",
+        "stats": {
+            "str": 5,
+            "int": 4,
+            "dex": 9,
+            "end": 6,
+            "char": 4
+        }
+    },
+    "C5": {
+        "name": "priest",
+        "stats": {
+            "str": 3,
+            "int": 8,
+            "dex": 4,
+            "end": 5,
+            "char": 8
+        }
+    }
+}
+
+# BASIC STARTING GEAR
+gear = {
+    1001: {
+        "name": "rusty sword",
+        "attack": 5,
+        "spaceTake": 1,
+        "durability": 100,   
+    },
+    1002: {
+        "name": "rusty staff",
+        "attack": 0,
+        "spaceTake": 1,
+        "durability": 100  
+    },
+    1003: {
+        "name": "rusty dagger",
+        "attack": 8,
+        "spaceTake": 1,
+        "durability": 100
+    },
+    1004: {
+        "name": "rusty bow",
+        "attack": 0,
+        "spaceTake": 1,
+        "durability":100  
+    }
+}
+
+skills = {
+    101: {
+        "name": "martial arts",
+        "levels" : 0,
+    },
+    102: {
+        "name": "swordsmanship",
+        "level": 0
+    },
+    103: {
+        "name": "magi control",
+        "level": 0
+    },
+    104: {
+        "name": "stealth",
+        "level": 0
+    },
+    105: {
+        "name": "aim",
+        "level": 0
+    },
+    106: {
+        "name": "heal",
+        "level": 0
+    }
+}
+
+
 
 playerData = {}
 progress = 0
+evil = 0
+good = 0
 
 
 # CREATE PLAYER STATUS -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -15,14 +134,14 @@ def create_player(details):
     """CREATES THE PLAYER DATA USING THE DATABASES AND THE USER GIVEN DATA"""
     global playerData
     # Class, Name, equipments, gender
-    stats = c.classes[details["class"]]["stats"]
+    stats = classes[details["class"]]["stats"]
 
     playerData = {
         "name": details["name"],
         "gender": details["gender"],
-        "class": c.classes[details["class"]]["name"],
+        "class": classes[details["class"]]["name"],
         "stats": stats,
-        "equipment": [itm.gear[details["equipments"]]["name"]],
+        "equipment": [gear[details["equipments"]]["name"]],
         "hp": int(stats["str"] * 5) + int(stats["end"] * 10),
         "mana": int(stats["int"] * 10) + int(stats["char"] * 2),
         "level": 1,
@@ -91,7 +210,7 @@ def get_info():
 def intro():
     """VERY INTRO OF THE GAME"""
     global playerData
-    print(art.logo)
+    print(logo)
     print(
         "\x1b[3mIn the age before time, when stars whispered secrets and the winds spoke names long forgotten... a darkness sealed by five heroes begins to stir once more.\x1b[0m"
     )
@@ -142,20 +261,19 @@ def get_status_window(data):
         print(f"  -> {_.title()}")
     print(f"+------------------------------------+\n")
 
-
 # STORYLINE START ------------------------------------------------------------------------------------------------------------------------------------------------------
 def story():
     """MAIN STORYLINE FUNCTION(I THINK)"""
     global playerData
     print("\n")
 
+def autoQuest():
+    """TODO"""
 
 def main():
     """MAIN"""
     intro()
     get_status_window(playerData)
-    print(playerData)
-    # get_status_window(data = {'name': 'arthur', 'gender': 'Male', 'class': 'warrior', 'stats': {'str': 10, 'int': 2, 'dex': 5, 'end': 8, 'char': 4}, 'equipment': ['rusty sword'], 'hp': 130, 'mana': 28, 'level': 1})
-
+    story()
 
 main()

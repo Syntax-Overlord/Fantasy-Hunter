@@ -8,8 +8,6 @@ import art
 
 playerData = {}
 progress = 0
-evil = 0
-good = 0
 
 
 # CREATE PLAYER STATUS -------------------------------------------------------------------------------------------------------------------------------------------------
@@ -145,10 +143,18 @@ def get_status_window(data):
     print(f"+------------------------------------+\n")
 
 
+# STORYLINE START ------------------------------------------------------------------------------------------------------------------------------------------------------
+def story():
+    """MAIN STORYLINE FUNCTION(I THINK)"""
+    global playerData
+    print("\n")
+
+
 def main():
     """MAIN"""
     intro()
     get_status_window(playerData)
+    print(playerData)
 
 
 main()
