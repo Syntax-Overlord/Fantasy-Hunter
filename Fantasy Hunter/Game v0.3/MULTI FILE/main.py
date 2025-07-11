@@ -122,24 +122,25 @@ def intro():
 # GENERATE STATUS WINDOW -----------------------------------------------------------------------------------------------------------------------------------------------
 def get_status_window(data):
     """GENERATES A STATUS WINDOW USING THE GENERATED PLAYER DATA"""
-    print(f"\n+------------------------------------+")
-    print(f"  NAME: {data["name"].title()}")
-    print(f"  Gender: {data["gender"].title()}")
-    print(f"  Level: {data["level"]}")
-    print(f"  CLASS: {data['class'].title()}")
-    print(f"  HP: {data["hp"]}")
-    print(f"  MANA: {data["mana"]}")
-    print(f" ")
-    print(f"  STATISTICS")
-    print(f"    STRENGTH: {data["stats"]['str']}     DEXTERITY: {data["stats"]['dex']}")
     print(
-        f"    INTELLIGENCE: {data["stats"]['int']}  ENDURANCE: {data["stats"]['end']}"
+        f"""\n+------------------------------------+
+|   NAME: {data["name"].title().ljust(27)}|
+|   Gender: {data["gender"].title().ljust(25)}|
+|   Level: {str(data["level"]).ljust(26)}|
+|   CLASS: {data['class'].title().ljust(26)}|
+|   HP: {str(data["hp"]).ljust(29)}|
+|   MANA: {str(data["mana"]).ljust(27)}|
+|   STATISTICS{"".ljust(23)}|
+|     STRENGTH: {str(data["stats"]['str']).ljust(21)}|
+|     DEXTERITY: {str(data["stats"]['dex']).ljust(20)}|
+|     INTELLIGENCE: {str(data["stats"]['int']).ljust(17)}|
+|     ENDURANCE: {str(data["stats"]['end']).ljust(20)}|
+|     CHARISMA: {str(data["stats"]['char']).ljust(21)}|
+|{"".ljust(36)}|
+|   EQUIPPED{"".ljust(25)}|"""
     )
-    print(f"    CHARISMA: {data["stats"]['char']}")
-    print(f" ")
-    print(f"  EQUIPPED")
     for _ in data["equipment"]:
-        print(f"  -> {_.title()}")
+        print(f"|  -> {_.title().ljust(31)}|")
     print(f"+------------------------------------+\n")
 
 
