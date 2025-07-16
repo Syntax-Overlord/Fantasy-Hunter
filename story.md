@@ -2,6 +2,8 @@
 
 ## Chapters
 
+---
+
 ### Chapter 1: The First Hunt
 
 #### Main Quest Line: Bronze Beginnings
