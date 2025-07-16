@@ -1,66 +1,95 @@
-# **Fantasy Hunter - A Text-Based RPG**
-<!--
-## **About the Project**
+# **Fantasy Hunter — A Text-Based RPG**
 
-Welcome to Fantasy Hunter, a text-based RPG that I started as a proof of my progress in game development. This project is in beta, and I plan to update it every 1 to 2 months with new features, improvements, and hidden Easter eggs referencing things I enjoy.
+Welcome to **Fantasy Hunter**, a text-based RPG where you become a hunter in a world of monsters, mysteries, and ancient secrets. Create your character, join the guild, and shape your destiny through choices, quests, and evolving storylines.
 
-The game is designed to be a fun, interactive experience where players can create their own character, explore a vast world, and take on challenges in a fantasy setting. While it's still in development, I plan to add more mechanics, better interactions, and a full combat system in future updates.
+---
 
-## **Features (So Far)**
+## 🚀 **Current Features**
 
-- ✅ Character Creation – Choose your name, gender, and class.
-- ✅ Stat System – Customize your stats or have them randomly assigned.
-- ✅ Skill System – Each class starts with unique skills.
-- ✅ Basic Exploration & Choices – Start your journey in a fantasy world.
-- ✅ Random Events & Interactive Story Elements – Read books, make choices, and explore different paths.
+- [ ] **Character Creation:** Name, gender, and class selection
+- [ ] **Stat System:** Custom or random stat assignment
+- [ ] **Skill System:** Unique class skills
+- [ ] **Exploration:** Navigate cities, dungeons, and wilds
+- [ ] **Interactive Choices:** Branching storylines and events
+- [ ] **Basic Loot System:** Collect items from encounters
+- [ ] **Quest System:** Main and side quests with progress tracking
 
-## **Planned Features**
+---
 
-- 🚀 Combat System – Turn-based battles with enemies.
-- 🚀 Inventory System – Collect, use, and manage items.
-- 🚀 Expanded World & Story – More locations, quests, and lore.
-- 🚀 Easter Eggs – Hidden references to things I like.
-- 🚀 Designed UI Version – A visually enhanced version with pixel art and improved interface.
-- 🚀 Turn-Based Combat System – Inspired by classic RPGs but with a medieval knights theme.
-- 🚀 Complete Story Mode – A fully developed narrative adventure.
-- 🚀 Web & Mobile Versions – Future versions using Java, web development, and UI/UX design.
+## 🛠️ **Planned Features**
 
-## **Disclaimer**
+- [ ] **Turn-Based Combat System:** Inspired by classic RPGs
+- [ ] **Inventory System:** Collect, use, and manage items
+- [ ] **Expanded World & Story:** More locations, quests, and lore
+- [ ] **Reputation & Faction System:** Choices affect alliances and questlines
+- [ ] **Skill Trees:** Combat, Stealth, Magic, Research
+- [ ] **Equipment Customization:** Weapons and armor with bonuses
+- [ ] **Base Management:** Upgrade safe houses and networks
+- [ ] **Crafting System:** Create tools, potions, and equipment
+- [ ] **Random Encounters:** Monster ambushes, rare events, mysterious merchants
+- [ ] **Graphical UI Version:** Pixel art and improved interface
+- [ ] **Web & Mobile Versions:** Future releases
 
-I am not a professional programmer and still a beginner in game development. This is a side project, and the code may be messy or unoptimized. If you notice any issues or have suggestions, feel free to contact me via email—I am always looking to improve and learn!
+---
 
-As I develop my skills in web development, Java, UI/UX design (Figma), and pixel art, I plan to design a full graphical version of this game. It will feature a well-designed UI, pixel-art visuals, and an improved combat system inspired by classic RPG mechanics. However, I will continue to maintain the text-based version, ensuring it remains updated with the latest features and story developments.
+## 📖 **Story Progression**
 
-By the time you're reading this, I may have already implemented some of these features!
+### **Chapters & Main Quests**
 
-## **License & Usage**
+- [ ] **Chapter 1: The First Hunt**
+  - [ ] Guild registration, combat training, first hunt
+- [ ] **Chapter 2: Whispers in the Dark**
+  - [ ] Rune mysteries, missing scholars, shadowy factions
+- [ ] **Chapter 3: The Echo of Legacy**
+  - [ ] Family secrets, ancient powers, prophecy
+- [ ] **Chapter 4: Rise of the Eclipse**
+  - [ ] Guild crisis, faction choices, internal intrigue
+- [ ] **Chapter 5: The Final Hunt (Phase 1)**
+  - [ ] Ancient weapons, Hollow Rift, ultimate showdown
 
-### ✅ Allowed:
+### **Side Quests & Sub-Chapters**
 
-- You can fork this repository and modify the game.
+- [ ] Lost merchant’s cart, village pest control, whispering beast
+- [ ] Shadow market dealings, missing scholar, monster migration
+- [ ] Temple of the Five, legacy of the hunt, ancient archives
 
-- You can share your own versions (as long as credit is given to me in a way that follows the license).
+---
 
-- You can use this project as a learning resource or inspiration for your own work.
+## 🧩 **Gameplay Systems**
 
-### ❌ Not Allowed:
+- [ ] **Quest & Reputation System**
+- [ ] **Skill Trees & Special Abilities**
+- [ ] **Equipment & Crafting**
+- [ ] **Alliance & Faction Management**
+- [ ] **Base/Safe House Upgrades**
+- [ ] **Combat Styles & Stealth Mechanics**
+- [ ] **Lore & Bestiary Collection**
 
-- No commercial use – You CANNOT make money from this project in any way (selling, ads, paid versions, etc.).
+---
 
-- No distribution – If you share or modify the game, you must give credit to the original project and not claim it as your own.
+## ⚠️ **Disclaimer**
 
-- No closed-source forks – If you modify and distribute your own version, it must remain open-source under the same license.
+This is a beginner’s project and a work in progress. Code may be messy or unoptimized. Suggestions and feedback are welcome!
 
-## **Contributing**
+---
 
-I’m open to suggestions and improvements! If you want to contribute, feel free to fork the repository and submit a pull request. Just make sure it aligns with the project’s direction.
+## 📜 **License & Usage**
 
-## **Contact**
+- [x] **Allowed:** Fork, modify, and share (with credit)
+- [x] **Not Allowed:** Commercial use, closed-source forks, or claiming as your own
 
-If you have any questions, ideas, or feedback, feel free to open an issue on GitHub or reach out to me via email.
+---
 
-##  
+## 🤝 **Contributing**
 
-Thanks for checking out Fantasy Hunter! More updates coming soon! 🚀🚀-->
+Open to suggestions and pull requests! Please align with the project’s direction.
 
-IN WORKS
+---
+
+## 📬 **Contact**
+
+Open an issue or reach out via email for questions, ideas, or feedback.
+
+---
+
+Thanks for checking out Fantasy Hunter! More updates coming soon! 🚀🚀
