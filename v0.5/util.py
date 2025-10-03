@@ -25,15 +25,15 @@ class Item:
     def __repr__(self) -> str:
         """Return a string representation of the item."""
         return f"""
-Item ID: {self.id: str}
-Name: {self.name: str}
-Description: {self.description: str}
-Category: {self.category: str}
-Durability: {self.durability: int}
-Attack: {self.attack: int}
-Defense: {self.defense: int}
-Value: {self.value: list}
-Cost: {self.cost: int}
+Item ID: {self.id}
+Name: {self.name}
+Description: {self.description}
+Category: {self.category}
+Durability: {self.durability}
+Attack: {self.attack}
+Defense: {self.defense}
+Value: {self.value}
+Cost: {self.cost}
 """
 
     def to_dict(self) -> dict:
