@@ -61,7 +61,7 @@ class Inventory:
         self.weapons: list = []
         self.armors: list = []
         self.consumables: list = []
-        self.loadInventory()
+        self.load()
 
     def add(self, itemID: str, quantity: int = 1) -> None:
         """Add an item to the inventory.
