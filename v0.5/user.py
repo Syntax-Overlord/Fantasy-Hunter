@@ -1,4 +1,4 @@
-from util import Item
+from util import Item, Inventory
 
 
 class User:
@@ -9,7 +9,7 @@ class User:
         self.gender: str = gender
         self.job: tuple = job
         self.skillTree: list = skillTree
-        self.inventory: dict = self.getInventory(inventory)
+        self.inventory = Inventory()
 
     def __repr__(self) -> str:
         return f"""
@@ -20,9 +20,4 @@ SkillTree: {self.skillTree: list}
 Inventory: {self.inventory: list}
 """
 
-    def getInventory(inventory: list) -> dict:
-        inventoryDict: dict = {}
-        for item_id in inventory:
-            Obj = Item(item_id)
-            inventoryDict[item_id] = Obj.to_dict()
-        return inventoryDict
+    # def

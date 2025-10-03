@@ -1,0 +1,38 @@
+{
+  "001": {
+    "name": "Warrior",
+    "description": "A strong melee fighter with high defense.",
+    "base_stats": {
+      "hp": 150,
+      "mp": 30,
+      "attack": 15,
+      "defense": 10,
+      "speed": 5
+    },
+    "skills": ["Slash", "Shield Block"]
+  },
+  "002": {
+    "name": "Mage",
+    "description": "A master of elemental magic with high attack power.",
+    "base_stats": {
+      "hp": 100,
+      "mp": 100,
+      "attack": 25,
+      "defense": 5,
+      "speed": 7
+    },
+    "skills": ["Fireball", "Ice Spike"]
+  },
+  "003": {
+    "name": "Rogue",
+    "description": "A swift and agile fighter with high speed and critical hits.",
+    "base_stats": {
+      "hp": 120,
+      "mp": 50,
+      "attack": 20,
+      "defense": 7,
+      "speed": 15
+    },
+    "skills": ["Backstab", "Stealth"]
+  }
+}

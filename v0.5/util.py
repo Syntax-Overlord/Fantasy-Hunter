@@ -121,20 +121,20 @@ class Inventory:
                             print(f"Not enough {itemID} to subtract.")
                         break
 
-    def createInventory(self) -> None:
+    def create(self) -> None:
         """Create an empty inventory file if it doesn't exist or erases the older one to create the new one."""
         with open("data/inventory.json", "w") as file:
             json.dump(self.inventory, file, indent=4)
 
-    def saveInventory(self) -> None:
+    def save(self) -> None:
         """Saves the current inventory to the inventory file."""
         if not os.path.exists("data/inventory.json"):
-            self.createInventory()
+            self.create()
         else:
             with open("data/inventory.json", "w") as file:
                 json.dump(self.inventory, file, indent=4)
 
-    def loadInventory(self) -> dict:
+    def load(self) -> dict:
         """Loads the inventory from the inventory file."""
         inventory: dict = {}
         if os.path.exists("data/inventory.json"):
@@ -152,3 +152,12 @@ class Inventory:
         else:
             self.createInventory()
             return self.inventory
+
+    def __repr__(self) -> str:
+        """Return a string representation of the inventory."""
+        return f"""
+Inventory:
+Weapons: {self.weapons: list}
+Armors: {self.armors: list}
+Consumables: {self.consumables: list}
+"""
