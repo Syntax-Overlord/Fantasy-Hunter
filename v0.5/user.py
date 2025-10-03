@@ -1,4 +1,4 @@
-from util import item
+from util import Item
 
 
 class User:
@@ -23,6 +23,6 @@ Inventory: {self.inventory: list}
     def getInventory(inventory: list) -> dict:
         inventoryDict: dict = {}
         for item_id in inventory:
-            Obj = item(item_id)
+            Obj = Item(item_id)
             inventoryDict[item_id] = Obj.to_dict()
         return inventoryDict

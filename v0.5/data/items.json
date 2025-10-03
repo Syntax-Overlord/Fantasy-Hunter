@@ -1,92 +1,102 @@
 {
-    "001" : {
-        "name": "Health Potion",
-        "description": "Restores 50 HP",
-        "durability": -1,
-        "attack": 0,
-        "defense": 0,
-        "value": ["hp", 50],
-        "cost": 10
-    },
-    "002" : {
-        "name": "Mana Potion",
-        "description": "Restores 30 MP",
-        "durability": -1,
-        "attack": 0,
-        "defense": 0,
-        "value": ["mp", 30],
-        "cost": 15
-    },
-    "003" : {
-        "name": "Beginner's Sword",
-        "description": "A basic sword for new adventurers.",
-        "durability": 100,
-        "attack": 5,
-        "defense": 0,
-        "value": -1,
-        "cost": 10
-    },
-    "004" : {
-        "name": "Wooden Shield",
-        "description": "A simple wooden shield.",
-        "durability": 100,
-        "attack": 0,
-        "defense": 5,
-        "value": -1,
-        "cost": 8
-    },
-    "005" : {
-        "name": "Leather Armour",
-        "description": "Basic leather armour offering minimal protection.",
-        "durability": 100,
-        "attack": 0,
-        "defense": 10,
-        "value": -1,
-        "cost": 12
-    },
-    "006" : {
-        "name": "Iron Armour",
-        "description": "Sturdy iron armour for better defense.",
-        "durability": 150,
-        "attack": 0,
-        "defense": 20,
-        "value": -1,
-        "cost": 25
-    },
-    "007" : {
-        "name": "Fragment of a Mysterious Map",
-        "description": "A torn piece of a map. It looks ancient.",
-        "durability": -1,
-        "attack": 0,
-        "defense": 0,
-        "value": -1,
-        "cost": 1
-    },
-    "008" : {
-        "name": "Map to the Hidden Treasure",
-        "description": "A complete map leading to a hidden treasure.",
-        "durability": -1,
-        "attack": 0,
-        "defense": 0,
-        "value": -1,
-        "cost": 500
-    },
-    "009" : {
-        "name": "Ring of Strength",
-        "description": "A magical ring that increases the wearer's strength.",
-        "durability": -1,
-        "attack": 0,
-        "defense": 0,
-        "value": ["strength", 10],
-        "cost": 200
-    },
-    "010" : {
-        "name": "Amulet of Wisdom",
-        "description": "An amulet that enhances the wearer's wisdom.",
-        "durability": -1,
-        "attack": 0,
-        "defense": 10,
-        "value": ["intelligence", 10],
-        "cost": 200
-    }
+  "001": {
+    "name": "Health Potion",
+    "description": "Restores 50 HP",
+    "category": "consumable",
+    "durability": -1,
+    "attack": 0,
+    "defense": 0,
+    "value": ["hp", 50],
+    "cost": 10
+  },
+  "002": {
+    "name": "Mana Potion",
+    "description": "Restores 30 MP",
+    "category": "consumable",
+    "durability": -1,
+    "attack": 0,
+    "defense": 0,
+    "value": ["mp", 30],
+    "cost": 15
+  },
+  "003": {
+    "name": "Beginner's Sword",
+    "description": "A basic sword for new adventurers.",
+    "category": "weapon",
+    "durability": 100,
+    "attack": 5,
+    "defense": 0,
+    "value": -1,
+    "cost": 10
+  },
+  "004": {
+    "name": "Wooden Shield",
+    "description": "A simple wooden shield.",
+    "category": "weapon",
+    "durability": 100,
+    "attack": 0,
+    "defense": 5,
+    "value": -1,
+    "cost": 8
+  },
+  "005": {
+    "name": "Leather Armour",
+    "description": "Basic leather armour offering minimal protection.",
+    "category": "armor",
+    "durability": 100,
+    "attack": 0,
+    "defense": 10,
+    "value": -1,
+    "cost": 12
+  },
+  "006": {
+    "name": "Iron Armour",
+    "description": "Sturdy iron armour for better defense.",
+    "category": "armor",
+    "durability": 150,
+    "attack": 0,
+    "defense": 20,
+    "value": -1,
+    "cost": 25
+  },
+  "007": {
+    "name": "Fragment of a Mysterious Map",
+    "description": "A torn piece of a map. It looks ancient.",
+    "category": "consumable",
+    "durability": -1,
+    "attack": 0,
+    "defense": 0,
+    "value": -1,
+    "cost": 1
+  },
+  "008": {
+    "name": "Map to the Hidden Treasure",
+    "description": "A complete map leading to a hidden treasure.",
+    "category": "consumable",
+    "durability": -1,
+    "attack": 0,
+    "defense": 0,
+    "value": -1,
+    "cost": 500
+  },
+  "009": {
+    "name": "Ring of Strength",
+    "description": "A magical ring that increases the wearer's strength.",
+    "category": "armor",
+    "durability": -1,
+    "attack": 0,
+    "defense": 0,
+    "value": ["strength", 10],
+    "cost": 200
+  },
+  "010": {
+    "name": "Amulet of Wisdom",
+    "description": "An amulet that enhances the wearer's wisdom.",
+    "category": "armor",
+    "durability": -1,
+    "attack": 0,
+    "defense": 10,
+    "value": ["intelligence", 10],
+    "cost": 200
+  }
 }
