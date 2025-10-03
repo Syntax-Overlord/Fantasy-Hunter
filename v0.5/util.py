@@ -1,4 +1,5 @@
 import json
+import os
 
 
 class item:
@@ -43,3 +44,35 @@ Cost: {self.cost: int}
             "value": self.value,
             "cost": self.cost,
         }
+
+
+class Inventory:
+    def __init__(self):
+        self.inventory: dict = {}
+        self.weapons: list = []
+        self.armors: list = []
+        self.consumables: list = []
+
+    def createInventory(self) -> None:
+        """Create an empty inventory file if it doesn't exist or erases the older one to create the new one."""
+        if not os.path.exists("data/inventory.json"):
+            with open("data/inventory.json", "w") as file:
+                json.dump({}, file)
+        else:
+            with open("data/inventory.json", "w") as file:
+                self.inventory = json.load(file)
+
+    def saveInventory(self) -> None:
+        """Saves the current inventory to the inventory file."""
+        with open("data/inventory.json", "w") as file:
+            json.dump(self.inventory, file, indent=4)
+
+    def loadInventory(self) -> dict:
+        """Loads the inventory from the inventory file."""
+        if os.path.exists("data/inventory.json"):
+            with open("data/inventory.json", "r") as file:
+                inventory = json.load(file)
+        else:
+            self.createInventory()
+
+        return inventory
