@@ -161,3 +161,8 @@ Weapons: {self.weapons: list}
 Armors: {self.armors: list}
 Consumables: {self.consumables: list}
 """
+
+
+class Options:
+    def __init__(self):
+        pass
