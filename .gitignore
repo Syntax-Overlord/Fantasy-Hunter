@@ -1,5 +1,195 @@
+# ------------------------------------------------------------
+# OS / Filesystem noise
+# ------------------------------------------------------------
 .DS_Store
-_pycache__/
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.Spotlight-V100/
+.Trashes/
+
+# ------------------------------------------------------------
+# Editors / IDEs
+# ------------------------------------------------------------
+.vscode/
+.idea/
+*.iml
+*.suo
+*.user
+*.userossc
+*.sln.docstates
+*.swp
+*.swo
+*~
+
+# ------------------------------------------------------------
+# Logs and runtime artifacts
+# ------------------------------------------------------------
 *.log
-main0.py
-# .gitignore
+*.out
+*.err
+*.pid
+*.pid.lock
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ------------------------------------------------------------
+# Environment and local secrets
+# ------------------------------------------------------------
+.env
+.env.*
+*.local
+
+# ------------------------------------------------------------
+# Archives / packaged files
+# ------------------------------------------------------------
+*.7z
+*.gz
+*.zip
+*.tar
+*.tgz
+*.bz2
+*.rar
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+*.py,cover
+.python-version
+
+# Python tooling and caches
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+.pyre/
+.hypothesis/
+.tox/
+.nox/
+.coverage
+.coverage.*
+htmlcov/
+pip-wheel-metadata/
+
+# Python packaging/build
+build/
+dist/
+site/
+.eggs/
+*.egg
+*.egg-info/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python notebooks
+.ipynb_checkpoints/
+
+# ------------------------------------------------------------
+# JavaScript / TypeScript / Node.js
+# ------------------------------------------------------------
+node_modules/
+.npm/
+.pnpm-store/
+.yarn/
+.yarn/cache/
+.yarn/unplugged/
+.yarn/build-state.yml
+.yarn/install-state.gz
+.parcel-cache/
+.next/
+.nuxt/
+.svelte-kit/
+coverage/
+*.tsbuildinfo
+
+# ------------------------------------------------------------
+# Java / JVM (Java, Kotlin, Scala, Gradle, Maven)
+# ------------------------------------------------------------
+.gradle/
+out/
+target/
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*
+
+# ------------------------------------------------------------
+# .NET / C#
+# ------------------------------------------------------------
+bin/
+obj/
+*.rsuser
+
+# ------------------------------------------------------------
+# Go
+# ------------------------------------------------------------
+*.test
+coverage.out
+
+# ------------------------------------------------------------
+# Rust
+# ------------------------------------------------------------
+target/
+
+# ------------------------------------------------------------
+# C / C++ / CMake
+# ------------------------------------------------------------
+cmake-build-*/
+CMakeFiles/
+CMakeCache.txt
+compile_commands.json
+makedep*
+libtool
+aclocal.m4
+m4/
+autom4te.cache/
+
+# ------------------------------------------------------------
+# Swift / Xcode
+# ------------------------------------------------------------
+.build/
+DerivedData/
+*.xcworkspace/xcuserdata/
+*.xcuserdatad/
+*.xcuserstate
+
+# ------------------------------------------------------------
+# PHP / Composer
+# ------------------------------------------------------------
+vendor/
+
+# ------------------------------------------------------------
+# Ruby
+# ------------------------------------------------------------
+.bundle/
+tmp/
+
+# ------------------------------------------------------------
+# Terraform / Infrastructure
+# ------------------------------------------------------------
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.lock.hcl
+
+# ------------------------------------------------------------
+# Serverless
+# ------------------------------------------------------------
+.serverless/
+.aws-sam/
